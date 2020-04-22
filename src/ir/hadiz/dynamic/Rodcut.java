@@ -1,8 +1,6 @@
 package ir.hadiz.dynamic;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
 // this solution shows us the maximum price and the way.
 
@@ -33,7 +31,7 @@ public class Rodcut {
     private int rodcut(int n) {
         int max, index;
         for (int i = 1; i <= n; i++) {
-            max = -1;
+            max = Integer.MIN_VALUE;
             index = 0;
             for (int j = 1; j <= i; j++) {
                 int result = p[j] + r[i - j];
