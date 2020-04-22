@@ -1,5 +1,8 @@
+import ir.hadiz.dynamic.Rodcut;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("hello world!");
+        int[] arr = {1, 5, 8, 9, 10, 17, 17, 20};
+        new Rodcut(arr).start();
     }
 }
