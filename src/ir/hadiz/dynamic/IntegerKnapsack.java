@@ -22,13 +22,11 @@ public class IntegerKnapsack {
         System.out.println("prices :" + Arrays.toString(w));
         System.out.println("weights :" + Arrays.toString(p));
         System.out.println("result is : " + knapsack_dp(w.length - 1));
-//        System.out.println("m :" + Arrays.toString(m));
         for (int i = 0; i < m.length; i++) {
             if (m[i] >0)
                 System.out.print(String.format("{%d:%d}, ",i,m[i]));
         }
 
-//        System.out.println("\nx :" + Arrays.toString(x));
         System.out.println("choices : " + print(limit));
     }
 
