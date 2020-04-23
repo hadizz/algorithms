@@ -13,11 +13,11 @@ public class RodcutTest {
 
         arr = new int[]{1, 5, 8, 9, 10, 17, 17, 20};
         rodcut = new Rodcut(arr);
-        Assert.assertEquals("test 1",22, rodcut.rodcut(arr.length));
+        Assert.assertEquals("test 1",22, rodcut.rodcut_dp(arr.length));
 
         arr = new int[]{1, 3, 4, 5};
         rodcut = new Rodcut(arr);
-        Assert.assertEquals("test 2",6, rodcut.rodcut(arr.length));
+        Assert.assertEquals("test 2",6, rodcut.rodcut_dp(arr.length));
     }
 
     @Test

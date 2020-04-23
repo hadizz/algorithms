@@ -1,9 +1,10 @@
-import ir.hadiz.dynamic.Rodcut;
+import ir.hadiz.dynamic.IntegerKnapsack;
 
 public class Main {
     public static void main(String[] args) {
-        int[] arr = {1, 5, 8, 9, 10, 17, 17, 20};
+        int[] w = {5, 20, 30};
+        int[] p = {10, 100, 120};
 
-        new Rodcut(arr).start();
+        new IntegerKnapsack(w, p, 50).start();
     }
 }
