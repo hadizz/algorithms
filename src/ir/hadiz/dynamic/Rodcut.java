@@ -27,8 +27,7 @@ public class Rodcut {
         System.out.println("selected items are -> "+print(p.length - 1));
     }
 
-    // 0 1 3 4 5
-    private int rodcut(int n) {
+    public int rodcut(int n) {
         int max, index;
         for (int i = 1; i <= n; i++) {
             max = Integer.MIN_VALUE;
@@ -48,7 +47,7 @@ public class Rodcut {
         return r[n];
     }
 
-    private String print(int n) {
+    public String print(int n) {
         if (n <= 0)
             return "";
         return x[n] + ":" + print(n - x[n]);
